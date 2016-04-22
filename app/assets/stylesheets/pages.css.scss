@@ -1,0 +1,21 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+li {
+  display:inline;
+}
+
+.main {
+  background-image: url(https://drive.google.com/file/d/0B5MZq24f7RBlZGZ1SzR5ZzRXVjg/view);
+  text-align: center;
+  padding: 40px;
+}
+
+.footer {
+	text-align: center;
+	padding: 20px;
+  background-color: #202020;
+}
