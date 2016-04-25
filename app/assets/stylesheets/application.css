@@ -14,9 +14,6 @@
  *= require_self
  */
 
-@import "font-awesome-sprockets";
-@import "font-awesome";
-
 .navbar-inverse {
   margin:0px;
   -webkit-border-radius: 0 !important;
