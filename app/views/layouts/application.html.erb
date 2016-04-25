@@ -1,16 +1,54 @@
-<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"><!DOCTYPE html>
 <html>
 <head>
-  <title>Portfolio</title>
+  <title>Lea Subrenat</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <% link_to "Portfolio", /portfolio%>
+  # => <a href="/portfolio">Portfolio</a>
 </head>
 <body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Lea Subrenat</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#">About</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+        <li><a href="#">Contact Me</a></li>
+      </ul>
+    </div>
+</nav>
 
 <%= yield %>
 
+<footer class="footer">
+  <div class="container">
+    <a href="https://fi.linkedin.com/in/subrenatlea">
+      <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+    </a>
+    <a href="https://github.com/leasubrenat">
+      <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+    </a>
+	</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/jquery.unslider/1.0.0/unslider.min.js"></script> 
+
+<script>
+  $(function() { 
+    $('.banner').unslider({
+    	autoplay: true,
+      infinite: true
+    }) 
+  })
+</script>
 </body>
 </html>
