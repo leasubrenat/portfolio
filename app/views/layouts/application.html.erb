@@ -9,6 +9,18 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.unslider/1.0.0/unslider.min.js"></script> 
+  <script>
+    $(function() { 
+      $('.banner').unslider({
+        autoplay: true,
+        infinite: true,
+        dots: false,
+        arrows: true
+      }) 
+    })
+  </script>
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -36,18 +48,5 @@
     </a>
 	</div>
 </footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/jquery.unslider/1.0.0/unslider.min.js"></script> 
-
-<script>
-  $(function() { 
-    $('.banner').unslider({
-    	autoplay: true,
-      infinite: true
-    }) 
-  })
-</script>
 </body>
 </html>
