@@ -21,14 +21,19 @@
   border-radius: 0 !important;
 }
 
-.footer li {
-  display:inline;
+body {
+    min-height: 100%;
+    padding: 0 0 100px;
+    position: relative;
 }
 
 .footer {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 100px;
   margin-top: -100px;
-  //height: 150px;
   clear:both;
   text-align: center;
 	padding: 30px;
@@ -37,6 +42,10 @@
 
 .footer i {
   color: #989898;
+}
+
+.footer li {
+  display:inline;
 }
 
 .unslider{overflow:auto;margin:0;padding:0}
