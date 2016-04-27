@@ -8,11 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.unslider/1.0.0/unslider.min.js"></script> 
-  <script>
-  </script>
+  <%= csrf_meta_tags %> 
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -22,7 +18,7 @@
       </div>
       <ul class="nav navbar-nav">
         <li><a href="/about">About</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
+        <li><div id="no-turbo" data-no-turbolink><a href="/portfolio">Portfolio</a></div></li>
         <li><a href="/contact">Contact Me</a></li>
       </ul>
     </div>
@@ -40,5 +36,8 @@
     </a>
 	</div>
 </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.unslider/1.0.0/unslider.min.js"></script>
 </body>
 </html>
