@@ -33,6 +33,11 @@ padding-left: 0;
  	color: #989898;
 }
 
+#no-turbo a:hover {
+  text-decoration: none;
+ 	color: #ffffff;
+}
+
 body {
   min-height: 100%;
   padding: 0 0 100px;
