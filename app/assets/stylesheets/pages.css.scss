@@ -36,5 +36,13 @@ input[type=submit] {
 
 .box a {
   color: #000000;
- 	font-style: bold;
+ 	font-weight: bold;
+}
+
+.dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    text-align: center;
 }
