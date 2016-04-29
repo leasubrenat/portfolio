@@ -53,8 +53,9 @@ body {
   margin-top: -100px;
   clear:both;
   text-align: center;
-	padding: 30px;
+	padding: 40px;
   background-color: #202020;
+  color:#404040;
 }
 
 .footer i {
