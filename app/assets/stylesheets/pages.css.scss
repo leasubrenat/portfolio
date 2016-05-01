@@ -39,6 +39,11 @@ input[type=submit] {
  	font-weight: bold;
 }
 
+.box a:hover {
+  color: #ffffff;
+  text-decoration:none;
+}
+
 .dots {
     position: absolute;
     left: 0;
